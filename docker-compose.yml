@@ -34,18 +34,19 @@ services:
     ports:
       - 5432:5432
     volumes:
-      - db:/data/hh_app
+      - users-db:/data/hh_app_users
     env_file:
-      - .db.env
+      - .users-db.env
   offers-db:
     container_name: hh-offers-db
     image: postgres
     ports:
       - 5432:5432
     volumes:
-      - db:/data/hh_app
+      - offers-db:/data/hh_app_offers
     env_file:
-      - .db.env
+      - .offers-db.env
 volumes:
-  db:
+  offers-db:
+users-db:
   users:
