@@ -17,6 +17,9 @@
    \* The development of transactions microservice will be evaluated according to my progress.
 
 3. Start with frontend implementation
+   - Project Configuration ✓
+   - Design of Wireframes ✓
+   - Skeleton of Project ✓
 4. Start with backend implementation
 5. Integration
 6. Testing
