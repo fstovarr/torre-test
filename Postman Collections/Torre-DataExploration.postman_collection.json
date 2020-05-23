@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "b090e952-2eb0-4ace-b7b0-39c1b6f9219b",
+		"name": "Torre",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bio.torre.co/api/bios/sandraliz30",
+					"protocol": "https",
+					"host": [
+						"bio",
+						"torre",
+						"co"
+					],
+					"path": [
+						"api",
+						"bios",
+						"sandraliz30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Opportunities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://torre.co/api/opportunities/NrJlYPwD",
+					"protocol": "https",
+					"host": [
+						"torre",
+						"co"
+					],
+					"path": [
+						"api",
+						"opportunities",
+						"NrJlYPwD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search opportunities",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"skill\": {\n        \"term\": \"developer\",\n        \"experience\": \"potential-to-develop\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://search.torre.co/opportunities/_search/?offset=0&size=2&aggregate=false",
+					"protocol": "https",
+					"host": [
+						"search",
+						"torre",
+						"co"
+					],
+					"path": [
+						"opportunities",
+						"_search",
+						""
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "2"
+						},
+						{
+							"key": "aggregate",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search people",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"and\": [\n        {\n            \"skill\": {\n                \"term\": \"development\",\n                \"experience\": \"potential-to-develop\"\n            }\n        },\n        {\n            \"skill\": {\n                \"term\": \"leadership\",\n                \"experience\": \"potential-to-develop\"\n            }\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://search.torre.co/people/_search/?offset=0&size=2&aggregate=true",
+					"protocol": "https",
+					"host": [
+						"search",
+						"torre",
+						"co"
+					],
+					"path": [
+						"people",
+						"_search",
+						""
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "2"
+						},
+						{
+							"key": "aggregate",
+							"value": "true"
+						},
+						{
+							"key": "_ga",
+							"value": "2.254433024.905142772.1590246121-1000097581.1575636903",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
