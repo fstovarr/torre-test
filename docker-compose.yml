@@ -1,0 +1,51 @@
+version: "3.3"
+
+services:
+  web-application:
+    container_name: hh-webapp
+    build: "web-application/"
+    ports:
+      - 3000:3000
+    depends_on:
+      - users-ms
+      - offers-ms
+  users-ms:
+    image: strapi/strapi
+    container_name: hh-users-ms
+    restart: unless-stopped
+    ports:
+      - 1337:1337
+    volumes:
+      - users:/srv/app
+    env_file:
+      - .users.env
+    depends_on:
+      - users-db
+  offers-ms:
+    build: ./offers-ms
+    container_name: hh-offers-ms
+    env_file:
+      - .offers.env
+    depends_on:
+      - users-ms
+  users-db:
+    container_name: hh-users-db
+    image: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - db:/data/hh_app
+    env_file:
+      - .db.env
+  offers-db:
+    container_name: hh-offers-db
+    image: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - db:/data/hh_app
+    env_file:
+      - .db.env
+volumes:
+  db:
+  users:
