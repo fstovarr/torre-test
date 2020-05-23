@@ -3,11 +3,19 @@ const colors = require('vuetify/es5/util/colors').default
 module.exports = {
   mode: 'universal',
   /*
+   * Environment variables
+   */
+  env: {
+    NUXT_PORT: process.env.NUXT_PORT || '3000',
+    apiHost: process.env.API_PORT || '1337',
+    apiUrl: process.env.API_HOST || 'localhost'
+  },
+  /*
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    titleTemplate: '%s | HeadHunters App',
+    title: 'HeadHunters App' || process.env.npm_package_name,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -22,7 +30,7 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: 'blue' },
   /*
    ** Global CSS
    */
@@ -30,7 +38,13 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    '~/plugins/global.js',
+    '~/plugins/validators.js',
+    '~/plugins/moment.js',
+    '~/plugins/init-axios.client.js',
+    '~/plugins/guard.js'
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -48,13 +62,31 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    'nuxt-i18n',
+    ['cookie-universal-nuxt', { alias: 'cookiz' }]
   ],
+  i18n: {
+    locales: [
+      { code: 'es', name: 'spanish', flag: 'es', file: 'es.js' },
+      { code: 'en', name: 'english', flag: 'gb', file: 'en.js' }
+    ],
+    defaultLocale: 'es',
+    vueI18nLoader: true,
+    lazy: true,
+    langDir: 'locales/',
+    vueI18n: {
+      fallbackLocale: 'es'
+    }
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    host: process.env.API_HOST || 'localhost',
+    port: process.env.API_PORT || '1337'
+  },
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
@@ -62,7 +94,7 @@ module.exports = {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -83,6 +115,11 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    transpile: ['vee-validate/dist/rules'],
+    extend(config, ctx) {
+      config.node = {
+        fs: 'empty'
+      }
+    }
   }
 }

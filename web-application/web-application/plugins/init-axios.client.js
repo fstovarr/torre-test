@@ -5,5 +5,4 @@ export default async (ctx) => {
   const token = store.state.auth.token
 
   $axios.setToken(token, 'Bearer')
-  store.dispatch('permissions/getPermissionsData')
 }
