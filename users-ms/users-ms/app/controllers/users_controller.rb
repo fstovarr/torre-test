@@ -1,6 +1,11 @@
 class UsersController < ApplicationController
-    skip_before_action :check_permissions, only: [:create]
+  skip_before_action :check_permissions, only: [:create]
   before_action :set_users, only: [:show]
+
+  def head_hunters
+    u = User.find @decoded_user[:id]
+    render json: u.head_hunters, status: :ok
+  end
 
   # GET /users
   def index

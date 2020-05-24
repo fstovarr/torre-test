@@ -53,6 +53,7 @@
 
 <script>
 export default {
+  middleware: 'auth',
   data() {
     return {
       clipped: false,
@@ -62,17 +63,17 @@ export default {
         {
           icon: 'mdi-chart-bubble',
           title: this.$t('common.home'),
-          to: '/users'
+          to: '/company'
         },
         {
           icon: 'mdi-apps',
           title: this.$t('common.profile'),
-          to: 'profile'
+          to: '/company/profile'
         },
         {
           icon: 'mdi-chart-bubble',
           title: this.$t('common.headhunters'),
-          to: 'headhunters'
+          to: '/company/headhunters'
         },
         {
           icon: 'mdi-chart-bubble',

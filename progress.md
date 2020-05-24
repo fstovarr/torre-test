@@ -21,5 +21,9 @@
    - Design of Wireframes ✓
    - Skeleton of Project ✓
 4. Start with backend implementation
+   - Users ms implementation ✓
+   - Offers ms implementation ✓
+   - Api Gateway implementation ✓
 5. Integration
+   - Some functionalities in the front end don't works properly
 6. Testing

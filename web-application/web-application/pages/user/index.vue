@@ -1,13 +1,21 @@
 <template>
   <v-container>
     <v-row>
-      <h5>{{ $t('common.your-offers') }}</h5>
-      <offers :items="offers" />
+      <v-col cols="12">
+        <h5>{{ $t('common.your-offers') }}</h5>
+      </v-col>
+      <v-col cols="12">
+        <offers :items="offers" />
+      </v-col>
     </v-row>
     <v-row>
       <v-col xs="12" md="6">
-        <h5>{{ $t('common.headhunters') }}</h5>
-        <headhunters :items="headhunters" vertical />
+        <v-col cols="12">
+          <h5>{{ $t('common.headhunters') }}</h5>
+        </v-col>
+        <v-col cols="12">
+          <headhunters :items="headhunters" vertical />
+        </v-col>
       </v-col>
       <v-col xs="12" md="6">
         <h5>{{ $t('common.headhunters') }}</h5>
@@ -22,7 +30,6 @@
 
 export default {
   layout: 'users',
-  meta: { public: true },
   data: () => ({ headhunters: [], offers: [] }),
   created() {
     this.getInitialData()
@@ -30,9 +37,15 @@ export default {
   methods: {
     async getInitialData() {
       try {
-        const headhunters = await this.$axios.get('/headhunters')
+        const headhunters = await this.$axios.$get('/api/v1/headhunters')
         this.headhunters = headhunters
-        const offers = await this.$axios.get('/offers')
+      } catch (error) {
+        console.error(error)
+      }
+
+      try {
+        const offers = await this.$axios.$get('/api/v1/offers/user')
+        console.log(offers)
         this.offers = offers
       } catch (error) {
         console.error(error)

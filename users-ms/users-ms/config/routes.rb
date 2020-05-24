@@ -1,8 +1,21 @@
 Rails.application.routes.draw do
   post "/login", to: "authentication#login"
   delete "/logout", to: "authentication#logout"
-  delete "/check-token", to: "authentication#validate_token"
+  get "/check-token", to: "authentication#validate_token"
   get "/validate", to: "authentication#validate_user"
+
+  scope :users do
+    get "/head_hunters", to: "users#head_hunters"
+  end
+
+  scope :companies do
+    get "/head_hunters", to: "companies#head_hunters"
+  end
+
+  scope :headhunters do
+    get "/users", to: "head_hunters#users"
+    get "/companies", to: "head_hunters#companies"
+  end
 
   resources :users, only: [:create, :index, :show]
   resources :head_hunters, only: [:create, :index, :show]

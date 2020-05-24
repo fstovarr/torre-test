@@ -22,7 +22,6 @@
 
 export default {
   layout: 'companies',
-  meta: { public: true },
   data: () => ({ users: [], companies: [], offers: [] }),
   created() {
     this.getInitialData()

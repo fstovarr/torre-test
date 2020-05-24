@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "NODE_ENV=production nodemon app.js --exec babel-node --presets babel-preset-env",
-    "dev": "NODE_ENV=development nodemon app.js --exec babel-node --presets babel-preset-env"
+    "dev": "NODE_ENV=development OFFERS_HOST=localhost OFFERS_PORT=8000 USERS_HOST=localhost USERS_PORT=2000 nodemon app.js --exec babel-node --presets babel-preset-env"
   },
   "author": "Fabio Tovar",
   "license": "MIT",

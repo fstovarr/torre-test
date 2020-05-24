@@ -7,7 +7,7 @@ module.exports = {
    */
   env: {
     NUXT_PORT: process.env.NUXT_PORT || '3000',
-    apiHost: process.env.API_PORT || '1337',
+    apiHost: process.env.API_PORT || '8001',
     apiUrl: process.env.API_HOST || 'localhost'
   },
   /*
@@ -85,7 +85,7 @@ module.exports = {
    */
   axios: {
     host: process.env.API_HOST || 'localhost',
-    port: process.env.API_PORT || '1337'
+    port: process.env.API_PORT || '8001'
   },
   /*
    ** vuetify module configuration

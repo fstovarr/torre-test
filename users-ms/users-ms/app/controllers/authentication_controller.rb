@@ -1,6 +1,10 @@
 class AuthenticationController < ApplicationController
     skip_before_action :check_permissions, only: [:validate_user, :login]
 
+    def validate_token
+        render json: {id: @decoded_user[:id], type: @decoded_user[:type]}, status: :ok
+    end
+
     def validate_user
         username = params.require :username
 

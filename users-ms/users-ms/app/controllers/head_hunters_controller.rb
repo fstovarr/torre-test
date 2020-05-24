@@ -2,6 +2,16 @@ class HeadHuntersController < ApplicationController
   before_action :set_head_hunters, only: [:show]
   skip_before_action :check_permissions, only: [:create]
 
+  def companies
+    u = HeadHunter.find @decoded_user[:id]
+    render json: u.companies, status: :ok
+  end
+
+  def users
+    u = HeadHunter.find @decoded_user[:id]
+    render json: u.users, status: :ok
+  end
+
   # GET /head_hunters
   def index
     @head_hunters = HeadHunter.all

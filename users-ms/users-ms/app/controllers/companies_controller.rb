@@ -2,6 +2,11 @@ class CompaniesController < ApplicationController
   before_action :set_companies, only: [:show]
   skip_before_action :check_permissions, only: [:create]
 
+  def head_hunters
+    u = Company.find @decoded_user[:id]
+    render json: u.head_hunters, status: :ok
+  end
+
   # GET /companies
   def index
     @companies = Company.all

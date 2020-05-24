@@ -5,20 +5,68 @@ export const GetUsers = async function (req, res) {
   res.status(response.status).json(response.data);
 };
 
-export const ValidateUserEmail = async function (req, res) {
-  let response = await Http.torreBios.get(`/${req.params.id}`, req.body);
-  response = await Http.users.get(`/validate?email=${req.params.id}`);
-  res.status(response.status).json(response.data.type);
+export const GetHeadhuntersByUser = async function (req, res) {
+  let response = await Http.users.get(`/users/head_hunters`, {
+    headers: {
+      authorization:
+        req.headers["authorization"] || req.headers["Authorization"],
+    },
+  });
+
+  res.status(response.status).json(response.data);
 };
 
-export const PerformLogin = async function (req, res) {
-  let response = await Http.torreBios.get(`/${req.params.id}`, req.body);
-  response = await Http.users.post("/login", req.body);
+export const GetHeadhuntersByCompany = async function (req, res) {
+  let response = await Http.users.get(`/companies/head_hunters`, {
+    headers: {
+      authorization:
+        req.headers["authorization"] || req.headers["Authorization"],
+    },
+  });
 
-  res.status(200).json(undefined);
+  res.status(response.status).json(response.data);
 };
 
-// export const ValidateUserEmail = async function (req, res) {
-//   let response = await Http.torreBios.get(`/${req.params.id}`, req.body);
-//   res.status(200).json(undefined);
-// };
+export const GetCompaniesByHeadhunter = async function (req, res) {
+  let response = await Http.users.get(`/head_hunters/companies`, {
+    headers: {
+      authorization:
+        req.headers["authorization"] || req.headers["Authorization"],
+    },
+  });
+
+  res.status(response.status).json(response.data);
+};
+
+export const GetUsersByHeadhunter = async function (req, res) {
+  let response = await Http.users.get(`/head_hunters/users`, {
+    headers: {
+      authorization:
+        req.headers["authorization"] || req.headers["Authorization"],
+    },
+  });
+
+  res.status(response.status).json(response.data);
+};
+
+export const CreateHeadhunterRelation = async function (req, res) {
+  let response = await Http.users.post(`/assignment/request`, req.body, {
+    headers: {
+      authorization:
+        req.headers["authorization"] || req.headers["Authorization"],
+    },
+  });
+
+  res.status(response.status).json(response.data);
+};
+
+export const ModifyHeadhunterRelation = async function (req, res) {
+  let response = await Http.users.put(`/assignment/confirm`, req.body, {
+    headers: {
+      authorization:
+        req.headers["authorization"] || req.headers["Authorization"],
+    },
+  });
+
+  res.status(response.status).json(response.data);
+};

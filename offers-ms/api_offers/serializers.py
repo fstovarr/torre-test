@@ -7,11 +7,15 @@ class OfferSerializer(serializers.ModelSerializer):
         fields = [ 'company_id', 'objective', 'state' ]
 
 class HeadHunterOfferUserSerializer(serializers.ModelSerializer):
+    offer = OfferSerializer(read_only=True)
+    offer_id = serializers.IntegerField()
     class Meta:
         model = HeadHunterOfferUser
-        fields = [ 'offer', 'user_id', 'headhunter_id' ]
+        fields = [ 'offer', 'offer_id', 'user_id', 'headhunter_id' ]
 
 class CompanyHeadHunterOfferSerializer(serializers.ModelSerializer):
+    offer = OfferSerializer(read_only=True)
+    offer_id = serializers.IntegerField()
     class Meta:
         model = CompanyHeadHunterOffer
-        fields = [ 'offer', 'headhunter_id' ]
+        fields = [ 'offer', 'offer_id', 'headhunter_id' ]
