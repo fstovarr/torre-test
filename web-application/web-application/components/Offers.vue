@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex" v-if="items.length > 0">
     <v-card
-      style="margin: 10px;"
+      style="margin: 10px; padding: 10px;"
       :elevation="2"
       v-for="(item, idx) in items"
       :key="`offer_${idx}`"

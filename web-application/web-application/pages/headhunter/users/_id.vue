@@ -53,7 +53,7 @@ export default {
   methods: {
     async openAssignDialog() {
       try {
-        const offers = await this.$axios.get('/offers/open', {
+        const offers = await this.$axios.$get('/api/v1/offers/user', {
           params: { user_email: this.$route.params.id }
         })
         this.openOffers = offers
@@ -64,19 +64,23 @@ export default {
     },
     async getInitialData() {
       try {
-        const profile = await this.$axios.get(
-          `/profile/${this.$route.params.id}`
+        const profile = await this.$axios.$get(
+          `/api/v1/profile/${this.$route.params.id}`
         )
         this.user = profile
-
-        const headhunters = await this.$axios.get('/headhunters')
-        this.headhunters = headhunters
-
-        const offers = await this.$axios.get('/offers')
-        this.offers = offers
       } catch (error) {
         console.error(error)
       }
+
+      try {
+        const headhunters = await this.$axios.$get('/api/v1/users/headhunters')
+        this.headhunters = headhunters
+      } catch (error) {}
+
+      try {
+        const offers = await this.$axios.$get('/api/v1/offers/user')
+        this.offers = offers
+      } catch (error) {}
     }
   }
 }

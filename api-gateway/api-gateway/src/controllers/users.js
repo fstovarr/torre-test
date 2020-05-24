@@ -1,5 +1,10 @@
 import Http from "../../plugins/axios";
 
+export const GetProfile = async function (req, res) {
+  let response = await Http.torreBios.get(`/${req.params.id}`);
+  res.status(response.status).json(response.data);
+};
+
 export const GetUsers = async function (req, res) {
   let response = await Http.users.get("/users");
   res.status(response.status).json(response.data);
@@ -12,7 +17,6 @@ export const GetHeadhuntersByUser = async function (req, res) {
         req.headers["authorization"] || req.headers["Authorization"],
     },
   });
-
   res.status(response.status).json(response.data);
 };
 

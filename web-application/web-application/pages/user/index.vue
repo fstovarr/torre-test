@@ -9,17 +9,13 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col xs="12" md="6">
+      <v-col xs="12">
         <v-col cols="12">
           <h5>{{ $t('common.headhunters') }}</h5>
         </v-col>
         <v-col cols="12">
           <headhunters :items="headhunters" vertical />
         </v-col>
-      </v-col>
-      <v-col xs="12" md="6">
-        <h5>{{ $t('common.headhunters') }}</h5>
-        <headhunters vertical />
       </v-col>
     </v-row>
   </v-container>
@@ -37,7 +33,7 @@ export default {
   methods: {
     async getInitialData() {
       try {
-        const headhunters = await this.$axios.$get('/api/v1/headhunters')
+        const headhunters = await this.$axios.$get('/api/v1/users/headhunters')
         this.headhunters = headhunters
       } catch (error) {
         console.error(error)

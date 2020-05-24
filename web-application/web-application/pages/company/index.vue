@@ -6,8 +6,8 @@
     </v-row>
     <v-row>
       <v-col xs="12" md="6">
-        <h5>{{ $t('common.companies') }}</h5>
-        <companies :items="companies" vertical />
+        <h5>{{ $t('common.headhunters') }}</h5>
+        <headhunters :items="companies" vertical />
       </v-col>
       <v-col xs="12" md="6">
         <h5>{{ $t('common.offers') }}</h5>
@@ -29,15 +29,20 @@ export default {
   methods: {
     async getInitialData() {
       try {
-        const users = await this.$axios.get('/users')
+        const users = await this.$axios.$get('/api/v1/companies/users')
         this.users = users
-        const offers = await this.$axios.get('/offers')
-        this.offers = offers
-        const companies = await this.$axios.get('/companies')
-        this.companies = companies
       } catch (error) {
         console.error(error)
       }
+      try {
+        const offers = await this.$axios.$get('/offers')
+        this.offers = offers
+      } catch (error) {}
+
+      try {
+        const companies = await this.$axios.$get('/companies/headhunters')
+        this.companies = companies
+      } catch (error) {}
     }
   }
 }

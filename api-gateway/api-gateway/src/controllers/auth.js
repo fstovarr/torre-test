@@ -17,8 +17,9 @@ export const CreateUser = async function (req, res) {
 };
 
 export const PerformLogin = async function (req, res) {
-  let response = await Http.torreBios.get(`/${req.body.user.username}`);
-  response = await Http.users.post("/login", req.body);
+  if (req.body.type === "user")
+    await Http.torreBios.get(`/${req.body.user.username}`);
+  let response = await Http.users.post("/login", req.body);
   res.status(response.status).json(response.data);
 };
 

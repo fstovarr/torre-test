@@ -5105,3 +5105,1381 @@ Processing by AuthenticationController#validate_token as HTML
 Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 06:20:21 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 06:24:25 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.68ms)
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:24:46 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (30.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (11.1ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 11[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.65ms)
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 06:24:46 -0500
+Completed 200 OK in 340ms (Views: 70.1ms | ActiveRecord: 231.0ms)
+
+
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.26ms)
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:26:33 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (208.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (64.3ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 11[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.35ms)
+Completed 200 OK in 4325ms (Views: 1928.7ms | ActiveRecord: 272.7ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:28:41 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (0.7ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 11[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.0ms)
+Completed 200 OK in 38ms (Views: 19.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:29:00 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (1.3ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 11[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.12ms)
+Completed 200 OK in 23ms (Views: 6.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:29:06 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (1.5ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 11[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.26ms)
+Completed 200 OK in 20ms (Views: 10.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:29:27 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (0.6ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 11[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 200 OK in 20ms (Views: 10.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:33:37 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 06:33:39 -0500
+  [1m[36mHeadHunter Load (0.6ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 11[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 200 OK in 630ms (Views: 10.3ms | ActiveRecord: 47.1ms)
+
+
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.58ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/validate?username=fabiostovarr" for 127.0.0.1 at 2020-05-24 06:37:41 -0500
+Processing by AuthenticationController#validate_user as HTML
+  Parameters: {"username"=>"fabiostovarr"}
+  [1m[36mHeadHunter Load (96.9ms)[0m  [1m[34mSELECT  "head_hunters".* FROM "head_hunters" WHERE "head_hunters"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:11
+  [1m[36mUser Load (80.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:12
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.3ms)
+Completed 200 OK in 319ms (Views: 19.5ms | ActiveRecord: 202.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-05-24 06:37:46 -0500
+Processing by AuthenticationController#login as HTML
+  Parameters: {"user"=>{"username"=>"fabiostovarr", "password"=>"[FILTERED]", "type"=>"user"}, "authentication"=>{"user"=>{"username"=>"fabiostovarr", "password"=>"[FILTERED]", "type"=>"user"}}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:27
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.27ms)
+Completed 200 OK in 309ms (Views: 7.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:37:46 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (0.9ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 11[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.11ms)
+Completed 200 OK in 29ms (Views: 10.0ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 06:37:46 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.4ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/validate?username=fabiostovarr" for 127.0.0.1 at 2020-05-24 06:43:45 -0500
+Processing by AuthenticationController#validate_user as HTML
+  Parameters: {"username"=>"fabiostovarr"}
+  [1m[36mHeadHunter Load (2.3ms)[0m  [1m[34mSELECT  "head_hunters".* FROM "head_hunters" WHERE "head_hunters"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:11
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:12
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.48ms)
+Completed 200 OK in 20ms (Views: 5.3ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-05-24 06:43:50 -0500
+Processing by AuthenticationController#login as HTML
+  Parameters: {"user"=>{"username"=>"fabiostovarr", "password"=>"[FILTERED]", "type"=>"user"}, "authentication"=>{"user"=>{"username"=>"fabiostovarr", "password"=>"[FILTERED]", "type"=>"user"}}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:27
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 361ms (Views: 0.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:43:51 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (1.3ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 11[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 13ms (Views: 8.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 06:43:51 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:44:35 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (0.7ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 11[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.7ms)
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 06:44:35 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:45:06 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (0.9ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 11[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.11ms)
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 06:45:06 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:45:45 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (0.9ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 11[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 200 OK in 8ms (Views: 3.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 06:45:45 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.3ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:49:54 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (2.1ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 11[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.09ms)
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 06:49:54 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:50:17 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (1.9ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 11[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.17ms)
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 06:50:17 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.67ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:50:34 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (1.2ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 11[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.09ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 06:50:34 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (9.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (5016.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "hh_app_users_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (5016.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "hh_app_users_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (112.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "hh_app_users_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (62.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "hh_app_users_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (438.0ms)[0m  [1m[35mCREATE DATABASE "hh_app_users_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (204.7ms)[0m  [1m[35mCREATE DATABASE "hh_app_users_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (36.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (27.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6832360342558345665)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20200524011903)
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (31.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524011903_create_users.rb:3
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20200524011903_create_users.rb:12
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  ↳ db/migrate/20200524011903_create_users.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524011903') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateHeadHunters (20200524011943)
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (25.7ms)[0m  [1m[35mCREATE TABLE "head_hunters" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524011943_create_head_hunters.rb:3
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_head_hunters_on_email" ON "head_hunters"  ("email")[0m
+  ↳ db/migrate/20200524011943_create_head_hunters.rb:12
+  [1m[35m (38.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_head_hunters_on_username" ON "head_hunters"  ("username")[0m
+  ↳ db/migrate/20200524011943_create_head_hunters.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524011943') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCompanies (20200524012005)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (27.3ms)[0m  [1m[35mCREATE TABLE "companies" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524012005_create_companies.rb:3
+  [1m[35m (12.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_companies_on_email" ON "companies"  ("email")[0m
+  ↳ db/migrate/20200524012005_create_companies.rb:12
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_companies_on_username" ON "companies"  ("username")[0m
+  ↳ db/migrate/20200524012005_create_companies.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524012005') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateHeadHuntersUsers (20200524042554)
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (14.1ms)[0m  [1m[35mCREATE TABLE "head_hunters_users" ("id" bigserial primary key, "head_hunter_id" integer NOT NULL, "user_id" integer NOT NULL, "status" integer DEFAULT 0, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524042554_create_head_hunters_users.rb:3
+  [1m[35m (11.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_head_hunters_users_on_user_id_and_head_hunter_id" ON "head_hunters_users"  ("user_id", "head_hunter_id")[0m
+  ↳ db/migrate/20200524042554_create_head_hunters_users.rb:11
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524042554') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCompaniesHeadHunters (20200524042605)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE "companies_head_hunters" ("id" bigserial primary key, "head_hunter_id" integer NOT NULL, "company_id" integer NOT NULL, "status" integer DEFAULT 0, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524042605_create_companies_head_hunters.rb:3
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_companies_head_hunters_on_company_id_and_head_hunter_id" ON "companies_head_hunters"  ("company_id", "head_hunter_id")[0m
+  ↳ db/migrate/20200524042605_create_companies_head_hunters.rb:11
+  [1m[36mActiveRecord::SchemaMigration Create (4.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524042605') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2020-05-24 11:54:16.329681', '2020-05-24 11:54:16.329681') RETURNING "key"[0m
+  ↳ bin/rails:9
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6832360342558345665)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCompany Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "companies" WHERE "companies"."email" = 'c@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCompany Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "companies" WHERE "companies"."username" = 'company' LIMIT 1[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCompany Create (0.7ms)[0m  [1m[32mINSERT INTO "companies" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('C', 'c@c.com', '$2a$12$NZBxkLF.6G9TCrAxo7wbZukU12Xq6EVS/pDKc9dUNB4J3KlziKF.e', 'company', '2020-05-24 11:54:16.756050', '2020-05-24 11:54:16.756050') RETURNING "id"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'u@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('U', 'u@c.com', '$2a$12$XV.hdfmjhwDHLoOnItOH2OTn2CqR213/mzHpGuBCRTkQc0RKLUJKi', 'fabiostovarr', '2020-05-24 11:54:17.052731', '2020-05-24 11:54:17.052731') RETURNING "id"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mHeadHunter Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."email" = 'h@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:11
+  [1m[36mHeadHunter Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."username" = 'headhunter' LIMIT 1[0m
+  ↳ db/seeds.rb:11
+  [1m[36mHeadHunter Create (0.8ms)[0m  [1m[32mINSERT INTO "head_hunters" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('H', 'h@c.com', '$2a$12$8Eo0pPiC3Rb7t7LL6yLQkOL9FokNPIGvqTfjIc.Abpl69K6rh/zoW', 'headhunter', '2020-05-24 11:54:17.355360', '2020-05-24 11:54:17.355360') RETURNING "id"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mHeadHunter Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."email" = 'h@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:12
+  [1m[36mHeadHunter Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."username" = 'headhunter2' LIMIT 1[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (132.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "hh_app_users_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (124.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "hh_app_users_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (698.1ms)[0m  [1m[35mCREATE DATABASE "hh_app_users_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (328.7ms)[0m  [1m[35mCREATE DATABASE "hh_app_users_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (52.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (35.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6832360342558345665)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20200524011903)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (18.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524011903_create_users.rb:3
+  [1m[35m (10.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20200524011903_create_users.rb:12
+  [1m[35m (9.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  ↳ db/migrate/20200524011903_create_users.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524011903') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateHeadHunters (20200524011943)
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (44.9ms)[0m  [1m[35mCREATE TABLE "head_hunters" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524011943_create_head_hunters.rb:3
+  [1m[35m (20.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_head_hunters_on_email" ON "head_hunters"  ("email")[0m
+  ↳ db/migrate/20200524011943_create_head_hunters.rb:12
+  [1m[35m (20.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_head_hunters_on_username" ON "head_hunters"  ("username")[0m
+  ↳ db/migrate/20200524011943_create_head_hunters.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524011943') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (70.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCompanies (20200524012005)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (55.0ms)[0m  [1m[35mCREATE TABLE "companies" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524012005_create_companies.rb:3
+  [1m[35m (27.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_companies_on_email" ON "companies"  ("email")[0m
+  ↳ db/migrate/20200524012005_create_companies.rb:12
+  [1m[35m (18.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_companies_on_username" ON "companies"  ("username")[0m
+  ↳ db/migrate/20200524012005_create_companies.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (2.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524012005') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (12.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateHeadHuntersUsers (20200524042554)
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (46.7ms)[0m  [1m[35mCREATE TABLE "head_hunters_users" ("id" bigserial primary key, "head_hunter_id" integer NOT NULL, "user_id" integer NOT NULL, "status" integer DEFAULT 0, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524042554_create_head_hunters_users.rb:3
+  [1m[35m (16.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_head_hunters_users_on_user_id_and_head_hunter_id" ON "head_hunters_users"  ("user_id", "head_hunter_id")[0m
+  ↳ db/migrate/20200524042554_create_head_hunters_users.rb:11
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524042554') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCompaniesHeadHunters (20200524042605)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (18.1ms)[0m  [1m[35mCREATE TABLE "companies_head_hunters" ("id" bigserial primary key, "head_hunter_id" integer NOT NULL, "company_id" integer NOT NULL, "status" integer DEFAULT 0, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524042605_create_companies_head_hunters.rb:3
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_companies_head_hunters_on_company_id_and_head_hunter_id" ON "companies_head_hunters"  ("company_id", "head_hunter_id")[0m
+  ↳ db/migrate/20200524042605_create_companies_head_hunters.rb:11
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524042605') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (3.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2020-05-24 11:54:34.432214', '2020-05-24 11:54:34.432214') RETURNING "key"[0m
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6832360342558345665)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCompany Exists (6.5ms)[0m  [1m[34mSELECT  1 AS one FROM "companies" WHERE "companies"."email" = 'c@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCompany Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "companies" WHERE "companies"."username" = 'company' LIMIT 1[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCompany Create (1.3ms)[0m  [1m[32mINSERT INTO "companies" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('C', 'c@c.com', '$2a$12$2hL6KvwanYLp016D.IVC1uzi32Ze82bPSS44PXkHzSCNr6SWYyQdu', 'company', '2020-05-24 11:54:35.046114', '2020-05-24 11:54:35.046114') RETURNING "id"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'u@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('U', 'u@c.com', '$2a$12$2wRL.yaiu2NVqOnNhSsO6uYz9oh1Us7yt5x.rKe212mE2.XW77wo2', 'fabiostovarr', '2020-05-24 11:54:35.354415', '2020-05-24 11:54:35.354415') RETURNING "id"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (12.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mHeadHunter Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."email" = 'h@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:11
+  [1m[36mHeadHunter Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."username" = 'headhunter' LIMIT 1[0m
+  ↳ db/seeds.rb:11
+  [1m[36mHeadHunter Create (0.9ms)[0m  [1m[32mINSERT INTO "head_hunters" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('H', 'h@c.com', '$2a$12$LzDNLbSgssxC/zIdQas.veOjYKpdvojBteTJntKRu4wnps3rL7.Iy', 'headhunter', '2020-05-24 11:54:35.706814', '2020-05-24 11:54:35.706814') RETURNING "id"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mHeadHunter Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."email" = 'h@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:12
+  [1m[36mHeadHunter Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."username" = 'headhunter2' LIMIT 1[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mHeadHuntersUser Create (7.3ms)[0m  [1m[32mINSERT INTO "head_hunters_users" ("head_hunter_id", "user_id", "created_at", "updated_at") VALUES (1, 1, '2020-05-24 11:54:36.066130', '2020-05-24 11:54:36.066130') RETURNING "id"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCompaniesHeadHunter Create (0.7ms)[0m  [1m[32mINSERT INTO "companies_head_hunters" ("head_hunter_id", "company_id", "created_at", "updated_at") VALUES (1, 1, '2020-05-24 11:54:36.095259', '2020-05-24 11:54:36.095259') RETURNING "id"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mHeadHunter Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."email" = 'h@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:16
+  [1m[36mHeadHunter Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."username" = 'headhunter2' LIMIT 1[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (878.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "hh_app_users_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (58.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "hh_app_users_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (190.8ms)[0m  [1m[35mCREATE DATABASE "hh_app_users_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (195.4ms)[0m  [1m[35mCREATE DATABASE "hh_app_users_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (23.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (20.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6832360342558345665)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20200524011903)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (16.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524011903_create_users.rb:3
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20200524011903_create_users.rb:12
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  ↳ db/migrate/20200524011903_create_users.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524011903') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateHeadHunters (20200524011943)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (15.5ms)[0m  [1m[35mCREATE TABLE "head_hunters" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524011943_create_head_hunters.rb:3
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_head_hunters_on_email" ON "head_hunters"  ("email")[0m
+  ↳ db/migrate/20200524011943_create_head_hunters.rb:12
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_head_hunters_on_username" ON "head_hunters"  ("username")[0m
+  ↳ db/migrate/20200524011943_create_head_hunters.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524011943') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCompanies (20200524012005)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (17.5ms)[0m  [1m[35mCREATE TABLE "companies" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524012005_create_companies.rb:3
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_companies_on_email" ON "companies"  ("email")[0m
+  ↳ db/migrate/20200524012005_create_companies.rb:12
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_companies_on_username" ON "companies"  ("username")[0m
+  ↳ db/migrate/20200524012005_create_companies.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524012005') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateHeadHuntersUsers (20200524042554)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (12.5ms)[0m  [1m[35mCREATE TABLE "head_hunters_users" ("id" bigserial primary key, "head_hunter_id" integer NOT NULL, "user_id" integer NOT NULL, "status" integer DEFAULT 0, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524042554_create_head_hunters_users.rb:3
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_head_hunters_users_on_user_id_and_head_hunter_id" ON "head_hunters_users"  ("user_id", "head_hunter_id")[0m
+  ↳ db/migrate/20200524042554_create_head_hunters_users.rb:11
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524042554') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCompaniesHeadHunters (20200524042605)
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "companies_head_hunters" ("id" bigserial primary key, "head_hunter_id" integer NOT NULL, "company_id" integer NOT NULL, "status" integer DEFAULT 0, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524042605_create_companies_head_hunters.rb:3
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_companies_head_hunters_on_company_id_and_head_hunter_id" ON "companies_head_hunters"  ("company_id", "head_hunter_id")[0m
+  ↳ db/migrate/20200524042605_create_companies_head_hunters.rb:11
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524042605') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2020-05-24 11:55:00.019887', '2020-05-24 11:55:00.019887') RETURNING "key"[0m
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(6832360342558345665)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCompany Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "companies" WHERE "companies"."email" = 'c@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCompany Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "companies" WHERE "companies"."username" = 'company' LIMIT 1[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCompany Create (0.6ms)[0m  [1m[32mINSERT INTO "companies" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('C', 'c@c.com', '$2a$12$EpemK0/.gSM1mnHycA.1peXGzZoeq58prAC7TDH9360CHlA.Hk70a', 'company', '2020-05-24 11:55:00.427872', '2020-05-24 11:55:00.427872') RETURNING "id"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (9.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'u@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('U', 'u@c.com', '$2a$12$BpzQfq1nGm6PS1eg4D4pHOsJSAIsXVEdNuzSLX2Key/vwT3XCKq0O', 'fabiostovarr', '2020-05-24 11:55:00.738931', '2020-05-24 11:55:00.738931') RETURNING "id"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mHeadHunter Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."email" = 'h@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:11
+  [1m[36mHeadHunter Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."username" = 'headhunter' LIMIT 1[0m
+  ↳ db/seeds.rb:11
+  [1m[36mHeadHunter Create (0.8ms)[0m  [1m[32mINSERT INTO "head_hunters" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('H', 'h@c.com', '$2a$12$DQDN.UurTkM9hJ1tUoZ8e.DONqFmkRyZ1SNpPxX6ScE9P2xR399Am', 'headhunter', '2020-05-24 11:55:01.084277', '2020-05-24 11:55:01.084277') RETURNING "id"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mHeadHunter Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."email" = 'h2@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:12
+  [1m[36mHeadHunter Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."username" = 'headhunter2' LIMIT 1[0m
+  ↳ db/seeds.rb:12
+  [1m[36mHeadHunter Create (0.5ms)[0m  [1m[32mINSERT INTO "head_hunters" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('H', 'h2@c.com', '$2a$12$olq/QWqQE821wzWfxms.qOpXuM7edmd1GiAKi565lmGX2GDDCofUq', 'headhunter2', '2020-05-24 11:55:01.374225', '2020-05-24 11:55:01.374225') RETURNING "id"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (18.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mHeadHuntersUser Create (0.8ms)[0m  [1m[32mINSERT INTO "head_hunters_users" ("head_hunter_id", "user_id", "created_at", "updated_at") VALUES (1, 1, '2020-05-24 11:55:01.442527', '2020-05-24 11:55:01.442527') RETURNING "id"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCompaniesHeadHunter Create (0.9ms)[0m  [1m[32mINSERT INTO "companies_head_hunters" ("head_hunter_id", "company_id", "created_at", "updated_at") VALUES (1, 1, '2020-05-24 11:55:01.464192', '2020-05-24 11:55:01.464192') RETURNING "id"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mHeadHuntersUser Create (0.6ms)[0m  [1m[32mINSERT INTO "head_hunters_users" ("head_hunter_id", "user_id", "created_at", "updated_at") VALUES (2, 1, '2020-05-24 11:55:01.471537', '2020-05-24 11:55:01.471537') RETURNING "id"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCompaniesHeadHunter Create (3.2ms)[0m  [1m[32mINSERT INTO "companies_head_hunters" ("head_hunter_id", "company_id", "created_at", "updated_at") VALUES (2, 1, '2020-05-24 11:55:01.478496', '2020-05-24 11:55:01.478496') RETURNING "id"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+Started GET "/validate?username=fabiostovarr" for 127.0.0.1 at 2020-05-24 06:55:33 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/fabiotovar/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#validate_user as HTML
+  Parameters: {"username"=>"fabiostovarr"}
+  [1m[36mHeadHunter Load (0.9ms)[0m  [1m[34mSELECT  "head_hunters".* FROM "head_hunters" WHERE "head_hunters"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:11
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:12
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 48ms (Views: 17.1ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/validate?username=fabiostovarr" for 127.0.0.1 at 2020-05-24 06:57:03 -0500
+Processing by AuthenticationController#validate_user as HTML
+  Parameters: {"username"=>"fabiostovarr"}
+  [1m[36mHeadHunter Load (0.6ms)[0m  [1m[34mSELECT  "head_hunters".* FROM "head_hunters" WHERE "head_hunters"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:11
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:12
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-05-24 06:57:08 -0500
+Processing by AuthenticationController#login as HTML
+  Parameters: {"user"=>{"username"=>"fabiostovarr", "password"=>"[FILTERED]", "type"=>"user"}, "authentication"=>{"user"=>{"username"=>"fabiostovarr", "password"=>"[FILTERED]", "type"=>"user"}}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:27
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 291ms (Views: 3.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:57:08 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (0.9ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 1[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.9ms)
+Completed 200 OK in 40ms (Views: 24.4ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 06:57:08 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 06:58:56 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (0.8ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 1[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.8ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 06:58:56 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/validate?username=fabiostovarr" for 127.0.0.1 at 2020-05-24 07:00:39 -0500
+Processing by AuthenticationController#validate_user as HTML
+  Parameters: {"username"=>"fabiostovarr"}
+  [1m[36mHeadHunter Load (2.2ms)[0m  [1m[34mSELECT  "head_hunters".* FROM "head_hunters" WHERE "head_hunters"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:11
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:12
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 200 OK in 10ms (Views: 1.3ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-05-24 07:00:44 -0500
+Processing by AuthenticationController#login as HTML
+  Parameters: {"user"=>{"username"=>"fabiostovarr", "password"=>"[FILTERED]", "type"=>"user"}, "authentication"=>{"user"=>{"username"=>"fabiostovarr", "password"=>"[FILTERED]", "type"=>"user"}}}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:27
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 309ms (Views: 0.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 07:00:44 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (0.8ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 1[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 07:00:44 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/validate?username=fabiostovarr" for 127.0.0.1 at 2020-05-24 07:01:25 -0500
+Processing by AuthenticationController#validate_user as HTML
+  Parameters: {"username"=>"fabiostovarr"}
+  [1m[36mHeadHunter Load (1.4ms)[0m  [1m[34mSELECT  "head_hunters".* FROM "head_hunters" WHERE "head_hunters"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:11
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:12
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.68ms)
+Completed 200 OK in 7ms (Views: 1.6ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-05-24 07:01:28 -0500
+Processing by AuthenticationController#login as HTML
+  Parameters: {"user"=>{"username"=>"fabiostovarr", "password"=>"[FILTERED]", "type"=>"user"}, "authentication"=>{"user"=>{"username"=>"fabiostovarr", "password"=>"[FILTERED]", "type"=>"user"}}}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:27
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 290ms (Views: 0.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 07:01:28 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (2.6ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 1[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.62ms)
+Completed 200 OK in 10ms (Views: 4.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 07:01:28 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (54.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "hh_app_users_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (49.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "hh_app_users_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (190.1ms)[0m  [1m[35mCREATE DATABASE "hh_app_users_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (196.7ms)[0m  [1m[35mCREATE DATABASE "hh_app_users_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (25.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (20.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6832360342558345665)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20200524011903)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (17.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524011903_create_users.rb:3
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20200524011903_create_users.rb:12
+  [1m[35m (13.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  ↳ db/migrate/20200524011903_create_users.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524011903') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateHeadHunters (20200524011943)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (14.3ms)[0m  [1m[35mCREATE TABLE "head_hunters" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524011943_create_head_hunters.rb:3
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_head_hunters_on_email" ON "head_hunters"  ("email")[0m
+  ↳ db/migrate/20200524011943_create_head_hunters.rb:12
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_head_hunters_on_username" ON "head_hunters"  ("username")[0m
+  ↳ db/migrate/20200524011943_create_head_hunters.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524011943') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCompanies (20200524012005)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (24.9ms)[0m  [1m[35mCREATE TABLE "companies" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "username" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524012005_create_companies.rb:3
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_companies_on_email" ON "companies"  ("email")[0m
+  ↳ db/migrate/20200524012005_create_companies.rb:12
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_companies_on_username" ON "companies"  ("username")[0m
+  ↳ db/migrate/20200524012005_create_companies.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524012005') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateHeadHuntersUsers (20200524042554)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "head_hunters_users" ("id" bigserial primary key, "head_hunter_id" integer NOT NULL, "user_id" integer NOT NULL, "status" integer DEFAULT 0, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524042554_create_head_hunters_users.rb:3
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_head_hunters_users_on_user_id_and_head_hunter_id" ON "head_hunters_users"  ("user_id", "head_hunter_id")[0m
+  ↳ db/migrate/20200524042554_create_head_hunters_users.rb:11
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524042554') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCompaniesHeadHunters (20200524042605)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (14.2ms)[0m  [1m[35mCREATE TABLE "companies_head_hunters" ("id" bigserial primary key, "head_hunter_id" integer NOT NULL, "company_id" integer NOT NULL, "status" integer DEFAULT 0, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200524042605_create_companies_head_hunters.rb:3
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_companies_head_hunters_on_company_id_and_head_hunter_id" ON "companies_head_hunters"  ("company_id", "head_hunter_id")[0m
+  ↳ db/migrate/20200524042605_create_companies_head_hunters.rb:11
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20200524042605') RETURNING "version"[0m
+  ↳ bin/rails:9
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2020-05-24 12:02:00.255220', '2020-05-24 12:02:00.255220') RETURNING "key"[0m
+  ↳ bin/rails:9
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(6832360342558345665)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCompany Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "companies" WHERE "companies"."email" = 'c@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCompany Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "companies" WHERE "companies"."username" = 'company' LIMIT 1[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCompany Create (0.9ms)[0m  [1m[32mINSERT INTO "companies" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('Compañía de prueba', 'c@c.com', '$2a$12$myEJG2jB3aDrNDK1IyztFu1rpAuwAkeTaw2YgynQptvCjMFokBGSC', 'company', '2020-05-24 12:02:00.660442', '2020-05-24 12:02:00.660442') RETURNING "id"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'u@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('Fabio Tovar', 'u@c.com', '$2a$12$LJtORcqFEe0jlfBz8orKNeWQL78gx9TF0SmCM/yUmdlahpFbbRYnC', 'fabiostovarr', '2020-05-24 12:02:00.987961', '2020-05-24 12:02:00.987961') RETURNING "id"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mHeadHunter Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."email" = 'h@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:11
+  [1m[36mHeadHunter Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."username" = 'headhunter' LIMIT 1[0m
+  ↳ db/seeds.rb:11
+  [1m[36mHeadHunter Create (0.7ms)[0m  [1m[32mINSERT INTO "head_hunters" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('Test', 'h@c.com', '$2a$12$N9chmCIvAJNj0to6ZJ0WK.Mha38yLPNd6t9Yt1o2qbGUS8xR06D0i', 'headhunter', '2020-05-24 12:02:01.314762', '2020-05-24 12:02:01.314762') RETURNING "id"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mHeadHunter Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."email" = 'h2@c.com' LIMIT 1[0m
+  ↳ db/seeds.rb:12
+  [1m[36mHeadHunter Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "head_hunters" WHERE "head_hunters"."username" = 'headhunter2' LIMIT 1[0m
+  ↳ db/seeds.rb:12
+  [1m[36mHeadHunter Create (0.5ms)[0m  [1m[32mINSERT INTO "head_hunters" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('Test2', 'h2@c.com', '$2a$12$1DJP0G1blUbzg7sdNn1dh.CpdLsCEhUtdZWip16bekrRX/pt7Fn7C', 'headhunter2', '2020-05-24 12:02:01.615374', '2020-05-24 12:02:01.615374') RETURNING "id"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mHeadHuntersUser Create (1.0ms)[0m  [1m[32mINSERT INTO "head_hunters_users" ("head_hunter_id", "user_id", "created_at", "updated_at") VALUES (1, 1, '2020-05-24 12:02:01.659190', '2020-05-24 12:02:01.659190') RETURNING "id"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCompaniesHeadHunter Create (0.7ms)[0m  [1m[32mINSERT INTO "companies_head_hunters" ("head_hunter_id", "company_id", "created_at", "updated_at") VALUES (1, 1, '2020-05-24 12:02:01.682568', '2020-05-24 12:02:01.682568') RETURNING "id"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mHeadHuntersUser Create (0.5ms)[0m  [1m[32mINSERT INTO "head_hunters_users" ("head_hunter_id", "user_id", "created_at", "updated_at") VALUES (2, 1, '2020-05-24 12:02:01.687083', '2020-05-24 12:02:01.687083') RETURNING "id"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCompaniesHeadHunter Create (0.5ms)[0m  [1m[32mINSERT INTO "companies_head_hunters" ("head_hunter_id", "company_id", "created_at", "updated_at") VALUES (2, 1, '2020-05-24 12:02:01.691868', '2020-05-24 12:02:01.691868') RETURNING "id"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+Started GET "/validate?username=fabiostovarr" for 127.0.0.1 at 2020-05-24 07:03:16 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/fabiotovar/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#validate_user as HTML
+  Parameters: {"username"=>"fabiostovarr"}
+  [1m[36mHeadHunter Load (1.0ms)[0m  [1m[34mSELECT  "head_hunters".* FROM "head_hunters" WHERE "head_hunters"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:11
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:12
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.42ms)
+Completed 200 OK in 34ms (Views: 4.0ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/validate?username=fabiostovarr" for 127.0.0.1 at 2020-05-24 07:05:53 -0500
+Processing by AuthenticationController#validate_user as HTML
+  Parameters: {"username"=>"fabiostovarr"}
+  [1m[36mHeadHunter Load (0.8ms)[0m  [1m[34mSELECT  "head_hunters".* FROM "head_hunters" WHERE "head_hunters"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:11
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:12
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.61ms)
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/validate?username=fabiostovarr" for 127.0.0.1 at 2020-05-24 07:06:43 -0500
+Processing by AuthenticationController#validate_user as HTML
+  Parameters: {"username"=>"fabiostovarr"}
+  [1m[36mHeadHunter Load (2.0ms)[0m  [1m[34mSELECT  "head_hunters".* FROM "head_hunters" WHERE "head_hunters"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:11
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:12
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.48ms)
+Completed 200 OK in 16ms (Views: 4.0ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/validate?username=fabiostovarr" for 127.0.0.1 at 2020-05-24 07:07:26 -0500
+Processing by AuthenticationController#validate_user as HTML
+  Parameters: {"username"=>"fabiostovarr"}
+  [1m[36mHeadHunter Load (1.9ms)[0m  [1m[34mSELECT  "head_hunters".* FROM "head_hunters" WHERE "head_hunters"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:11
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:12
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.1ms)
+Completed 200 OK in 18ms (Views: 6.9ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/validate?username=fabiostovarr" for 127.0.0.1 at 2020-05-24 07:09:36 -0500
+Processing by AuthenticationController#validate_user as HTML
+  Parameters: {"username"=>"fabiostovarr"}
+  [1m[36mHeadHunter Load (2.5ms)[0m  [1m[34mSELECT  "head_hunters".* FROM "head_hunters" WHERE "head_hunters"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:11
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:12
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.3ms)
+Completed 200 OK in 17ms (Views: 3.7ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-05-24 07:16:24 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/fabiotovar/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"fabiostovarr", "email"=>"fabiostovarr@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "type"=>"company", "name"=>"Fabio Tovar"}}
+Unpermitted parameter: :type
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'fabiostovarr@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:25
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.14ms)
+Completed 422 Unprocessable Entity in 305ms (Views: 5.4ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-05-24 07:16:32 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"fabiostovar", "email"=>"fabiostovarr@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "type"=>"company", "name"=>"Fabio Tovar"}}
+Unpermitted parameter: :type
+  [1m[35m (10.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (11.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'fabiostovarr@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'fabiostovar' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('Fabio Tovar', 'fabiostovarr@gmail.com', '$2a$12$SQceupiPHl/JZOmB0s0MeuB7zdlC.4UuBSBfFkHtxrrK4iRVc4DBS', 'fabiostovar', '2020-05-24 12:16:32.754910', '2020-05-24 12:16:32.754910') RETURNING "id"[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:25
+Completed 500 Internal Server Error in 509ms (ActiveRecord: 24.5ms)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x00005619414ca620>
+Did you mean?  @user):
+  
+app/controllers/users_controller.rb:26:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-05-24 07:17:00 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"fabiostovar", "email"=>"fabiostovarr@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "type"=>"company", "name"=>"Fabio Tovar"}}
+Unpermitted parameter: :type
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'fabiostovarr@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'fabiostovar' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:25
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.07ms)
+Completed 422 Unprocessable Entity in 352ms (Views: 2.9ms | ActiveRecord: 9.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-05-24 07:17:05 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"fabiostova", "email"=>"fabiostovarr@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "type"=>"company", "name"=>"Fabio Tovar"}}
+Unpermitted parameter: :type
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'fabiostovarr@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'fabiostova' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:25
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.11ms)
+Completed 422 Unprocessable Entity in 304ms (Views: 0.5ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-05-24 07:17:11 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"fabiostova", "email"=>"fabiostovar@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "type"=>"company", "name"=>"Fabio Tovar"}}
+Unpermitted parameter: :type
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'fabiostovar@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'fabiostova' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('Fabio Tovar', 'fabiostovar@gmail.com', '$2a$12$Wtdwo6eYIAm7InFis9wTp.ipdY.QAUhtq3FC72NyToepK..9WVE.y', 'fabiostova', '2020-05-24 12:17:11.568399', '2020-05-24 12:17:11.568399') RETURNING "id"[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:25
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.63ms)
+Completed 201 Created in 317ms (Views: 11.2ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 07:17:11 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (2.9ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 3[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.11ms)
+Completed 200 OK in 46ms (Views: 11.9ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 07:17:11 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 07:17:27 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (1.0ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 3[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.09ms)
+Completed 200 OK in 10ms (Views: 2.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 07:17:27 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-05-24 07:21:02 -0500
+Processing by AuthenticationController#login as HTML
+  Parameters: {"user"=>{"username"=>"company", "password"=>"[FILTERED]", "type"=>"company"}, "authentication"=>{"user"=>{"username"=>"company", "password"=>"[FILTERED]", "type"=>"company"}}}
+  [1m[36mCompany Load (0.9ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."username" = 'company' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:31
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 306ms (Views: 0.5ms | ActiveRecord: 6.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-05-24 07:21:10 -0500
+Processing by AuthenticationController#login as HTML
+  Parameters: {"user"=>{"username"=>"company", "password"=>"[FILTERED]", "type"=>"company"}, "authentication"=>{"user"=>{"username"=>"company", "password"=>"[FILTERED]", "type"=>"company"}}}
+  [1m[36mCompany Load (1.7ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."username" = 'company' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:31
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 291ms (Views: 0.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-05-24 07:37:56 -0500
+Processing by AuthenticationController#login as HTML
+  Parameters: {"user"=>{"username"=>"company", "password"=>"[FILTERED]", "type"=>"company"}, "authentication"=>{"user"=>{"username"=>"company", "password"=>"[FILTERED]", "type"=>"company"}}}
+  [1m[36mCompany Load (1.9ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."username" = 'company' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:31
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 283ms (Views: 0.6ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-05-24 07:38:37 -0500
+Processing by AuthenticationController#login as HTML
+  Parameters: {"user"=>{"username"=>"fabiostovarr", "password"=>"[FILTERED]", "type"=>"company"}, "authentication"=>{"user"=>{"username"=>"fabiostovarr", "password"=>"[FILTERED]", "type"=>"company"}}}
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:31
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 404 Not Found in 3ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-05-24 07:38:44 -0500
+Processing by AuthenticationController#login as HTML
+  Parameters: {"user"=>{"username"=>"comapny", "password"=>"[FILTERED]", "type"=>"company"}, "authentication"=>{"user"=>{"username"=>"comapny", "password"=>"[FILTERED]", "type"=>"company"}}}
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."username" = 'comapny' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:31
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 404 Not Found in 2ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-05-24 07:38:47 -0500
+Processing by AuthenticationController#login as HTML
+  Parameters: {"user"=>{"username"=>"company", "password"=>"[FILTERED]", "type"=>"company"}, "authentication"=>{"user"=>{"username"=>"company", "password"=>"[FILTERED]", "type"=>"company"}}}
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."username" = 'company' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:31
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 285ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-05-24 07:40:03 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"fabiostovarr", "email"=>"asdasda@asdsa.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "type"=>"company", "name"=>"sadasd"}}
+Unpermitted parameter: :type
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'asdasda@asdsa.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:25
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.08ms)
+Completed 422 Unprocessable Entity in 311ms (Views: 0.6ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-05-24 07:40:13 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"fabiostovarr", "email"=>"asdasda@asdsa.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "type"=>"headhunter", "name"=>"sadasd"}}
+Unpermitted parameter: :type
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'asdasda@asdsa.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'fabiostovarr' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:25
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.08ms)
+Completed 422 Unprocessable Entity in 410ms (Views: 0.5ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-05-24 07:40:18 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"fabiostovar", "email"=>"asdasda@asdsa.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "type"=>"headhunter", "name"=>"sadasd"}}
+Unpermitted parameter: :type
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'asdasda@asdsa.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'fabiostovar' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:25
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.1ms)
+Completed 422 Unprocessable Entity in 335ms (Views: 0.6ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-05-24 07:40:21 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"fabiostsasovar", "email"=>"asdasda@asdsa.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "type"=>"headhunter", "name"=>"sadasd"}}
+Unpermitted parameter: :type
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'asdasda@asdsa.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'fabiostsasovar' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "username", "created_at", "updated_at") VALUES ('sadasd', 'asdasda@asdsa.com', '$2a$12$fDoh0bSiwtBXoo1cchksgOE7.j9UxXTzaFb5IDfT7gvp41ssv.M0u', 'fabiostsasovar', '2020-05-24 12:40:21.591011', '2020-05-24 12:40:21.591011') RETURNING "id"[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:25
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.27ms)
+Completed 201 Created in 311ms (Views: 0.8ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/users/head_hunters" for 127.0.0.1 at 2020-05-24 07:40:21 -0500
+Processing by UsersController#head_hunters as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:6
+  [1m[36mHeadHunter Load (1.1ms)[0m  [1m[34mSELECT "head_hunters".* FROM "head_hunters" INNER JOIN "head_hunters_users" ON "head_hunters"."id" = "head_hunters_users"."head_hunter_id" WHERE "head_hunters_users"."user_id" = 4[0m
+  ↳ app/controllers/users_controller.rb:7
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/check-token" for 127.0.0.1 at 2020-05-24 07:40:21 -0500
+Processing by AuthenticationController#validate_token as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+

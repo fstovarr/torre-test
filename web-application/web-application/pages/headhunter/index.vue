@@ -29,15 +29,21 @@ export default {
   methods: {
     async getInitialData() {
       try {
-        const users = await this.$axios.get('/users')
+        const users = await this.$axios.$get('/api/v1/headhunters/users')
         this.users = users
-        const offers = await this.$axios.get('/offers')
-        this.offers = offers
-        const companies = await this.$axios.get('/companies')
-        this.companies = companies
       } catch (error) {
         console.error(error)
       }
+      try {
+        const offers = await this.$axios.$get('/api/v1/offers/headhunter')
+        this.offers = offers
+      } catch (error) {}
+      try {
+        const companies = await this.$axios.$get(
+          '/api/v1/headhunters/companies'
+        )
+        this.companies = companies
+      } catch (error) {}
     }
   }
 }

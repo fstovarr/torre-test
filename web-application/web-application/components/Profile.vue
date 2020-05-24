@@ -1,6 +1,6 @@
 <template>
-  <v-card :loading="loading" class="mx-auto my-12" max-width="374">
-    <v-img height="250" :src="user.profile_pic"></v-img>
+  <v-card :loading="loading" class="mx-auto my-12" max-width="350">
+    <v-img :src="user.profile_pic"></v-img>
 
     <v-card-title>{{ user.name }}</v-card-title>
 

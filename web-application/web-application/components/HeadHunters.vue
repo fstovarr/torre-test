@@ -1,5 +1,20 @@
 <template>
-  <div>Headhunters</div>
+  <div class="d-flex" v-if="items.length > 0">
+    <v-card
+      style="margin: 10px; padding: 10px;"
+      :elevation="2"
+      v-for="(item, idx) in items"
+      :key="`offer_${idx}`"
+    >
+      <div>{{ item.name }}</div>
+      <p>
+        {{ `${item.username} | ${item.email}` }}
+      </p>
+    </v-card>
+  </div>
+  <div v-else>
+    <h4>{{ $t('common.no_data') }}</h4>
+  </div>
 </template>
 <script>
 export default {

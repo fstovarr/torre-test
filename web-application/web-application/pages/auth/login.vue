@@ -42,7 +42,11 @@
       <validation-observer
         tag="v-form"
         ref="validator"
-        v-if="type === 'company' || type === 'headhunter' || isLogin"
+        v-if="
+          (isLogin && type === 'user') ||
+            (type === 'company' && !isSignup) ||
+            (type === 'headhunter' && !isSignup)
+        "
       >
         <input-text
           :name="$t('auth.username')"
@@ -67,13 +71,20 @@
         >
           {{ buttonTitle }}
         </v-btn>
+
+        <v-btn
+          style="margin-top:10px;"
+          v-if="type === 'company' || type === 'headhunter'"
+          @click.prevent="step = 'signup'"
+          color="primary"
+          type="submit"
+          block
+        >
+          {{ $t('common.signup') }}
+        </v-btn>
       </validation-observer>
 
-      <validation-observer
-        tag="v-form"
-        ref="validator"
-        v-if="type === 'company' || type === 'headhunter' || isSignup"
-      >
+      <validation-observer tag="v-form" ref="validator" v-if="isSignup">
         <input-text
           :name="$t('auth.username')"
           rules="required"
@@ -214,7 +225,7 @@ export default {
 
     async validateUsername() {
       try {
-        const valid = await this.$axios.get(
+        const valid = await this.$axios.$get(
           `api/v1/auth/validate/${this.username}`
         )
         console.log(valid)
@@ -245,6 +256,12 @@ export default {
       } catch (error) {
         console.error(error)
       }
+    }
+  },
+  watch: {
+    type(val) {
+      if (val !== 'user') this.step = 'login'
+      else this.step = 'validation'
     }
   }
 }

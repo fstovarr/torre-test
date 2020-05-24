@@ -27,3 +27,8 @@
 5. Integration
    - Some functionalities in the front end don't works properly
 6. Testing
+
+PENDING:
+
+- Integrarion of some functionalities in the front-end
+- Payment Gateway integration

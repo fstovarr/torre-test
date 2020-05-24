@@ -36,7 +36,7 @@ class AuthenticationController < ApplicationController
         if user.nil?
             raise ActiveRecord::RecordNotFound, "User not found"
         elsif user.authenticate user_params[:password]
-            tokens = JSONWebToken.encode payload: { id: user.id, type: user_params[:type] }
+            tokens = JSONWebToken.encode payload: { id: user.id, username: user.username, type: user_params[:type] }
             render json: tokens
         else
             raise AppException::AuthenticationError, "Invalid password"

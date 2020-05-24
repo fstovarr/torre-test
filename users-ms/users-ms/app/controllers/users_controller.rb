@@ -23,7 +23,7 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-        tokens = JSONWebToken.encode payload: { id: @user.id, type: "user" }
+        tokens = JSONWebToken.encode payload: { id: @user.id, username: @user.username, type: "user" }
         user = UserSerializer.new @user
         render json: {user: user, token: tokens}, status: :created
     else

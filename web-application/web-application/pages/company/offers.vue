@@ -6,11 +6,6 @@
       <offers :list="activeOffers" />
     </v-row>
 
-    <v-row>
-      <h2>{{ $t('common.past') }}</h2>
-      <headhunters :list="pastOffers" />
-    </v-row>
-
     <v-dialog v-model="dialogs.assign">
       <v-card>
         <v-card-title
@@ -37,17 +32,12 @@ export default {
   layout: 'companies',
   data: () => ({
     activeOffers: [],
-    pastOffers: [],
     dialogs: { assign: false }
   }),
-  created: async () => {
+  async created() {
     try {
-      const activeOffers = await this.$axios.get('/offers')
-      console.log(activeOffers)
+      const activeOffers = await this.$axios.$get('/api/v1/offers/users')
       this.activeOffers = activeOffers
-
-      const pastOffers = await this.$axios.get('/offers/finished')
-      this.pastOffers = pastOffers
     } catch (error) {
       console.error(error)
     }

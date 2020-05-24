@@ -19,6 +19,7 @@ import {
   GetHeadhuntersByCompany,
   CreateHeadhunterRelation,
   ModifyHeadhunterRelation,
+  GetProfile,
 } from "./controllers/users";
 
 const routes = [
@@ -30,6 +31,7 @@ const routes = [
       { name: "/validate/:id", type: "get", controller: ValidateUserEmail },
     ],
   },
+  { name: "/profile/:id", type: "get", controller: GetProfile },
   {
     name: "/offers",
     children: [
