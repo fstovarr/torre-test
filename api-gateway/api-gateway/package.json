@@ -1,0 +1,27 @@
+{
+  "name": "api-gateway",
+  "version": "0.0.1",
+  "description": "ApiGateway for HeadHuntersApp",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=production nodemon app.js --exec babel-node --presets babel-preset-env",
+    "dev": "NODE_ENV=development nodemon app.js --exec babel-node --presets babel-preset-env"
+  },
+  "author": "Fabio Tovar",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.2",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.19.2"
+  }
+}
