@@ -7,7 +7,7 @@
    - The application to be built will be a job platform centered in Head Hunters.
    - The backend will be developed following a Microservices Architecture.
    - There will be 3\* microservices and 1 API Gateway (Users, Offers and Transactions\*)
-   - Users will be deployed using a headless CMS (Time is tight), Offers will be deployed in in Ruby on Rails or Django, Transactions\* in Ruby on Rails or Django, and the Api Gateway in Express.js.
+   - Users will be deployed in Ruby on Rails, Offers will be deployed in in Ruby on Rails or Django, Transactions\* in Ruby on Rails or Django, and the Api Gateway in Express.js.
    - The application will use Kushki API as Payment Gateway, so we will have support in some countries initially.
    - The front-end will be developed in Nuxt.js
    - All the services and front-end will be dockerized, and deployed in Google Cloud.
