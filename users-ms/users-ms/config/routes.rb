@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     get "/head_hunters", to: "companies#head_hunters"
   end
 
-  scope :headhunters do
+  scope :head_hunters do
     get "/users", to: "head_hunters#users"
     get "/companies", to: "head_hunters#companies"
   end

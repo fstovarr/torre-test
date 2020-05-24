@@ -38,7 +38,7 @@ const routes = [
       { name: "/", type: "post", controller: CreateOffer },
       { name: "/user", type: "get", controller: GetOffers },
       { name: "/user/:id", type: "get", controller: GetOffersByUser },
-      { name: "/headhunter", type: "get", controller: GetOffersByHeadHunter },
+      { name: "/headhunter", type: "put", controller: GetOffersByHeadHunter },
       { name: "/:id", type: "put", controller: ModifyOfferState },
     ],
   },

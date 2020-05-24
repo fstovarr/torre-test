@@ -10,7 +10,6 @@ class AssignmentsController < ApplicationController
 
         if @decoded_user[:type] == "company"
             prev = CompaniesHeadHunter.where(company_id: @decoded_user[:id], head_hunter_id: head_hunter_id).last
-            puts prev
             raise ActiveRecord::RecordInvalid if !prev.nil?
 
             company = Company.find @decoded_user[:id]    

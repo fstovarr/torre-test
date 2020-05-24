@@ -10,13 +10,10 @@ services:
   #     - users-ms
   #     - offers-ms
   # users-ms:
-  #   image: strapi/strapi
+  #   build: "users-ms/"
   #   container_name: hh-users-ms
-  #   restart: unless-stopped
   #   ports:
-  #     - 1337:1337
-  #   volumes:
-  #     - users:/srv/app
+  #     - 2000:3000
   #   env_file:
   #     - .users.env
   #   depends_on:

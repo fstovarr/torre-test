@@ -1,5 +1,5 @@
 class HeadHuntersController < ApplicationController
-  before_action :set_head_hunters, only: [:show]
+  before_action :set_head_hunter, only: [:show]
   skip_before_action :check_permissions, only: [:create]
 
   def companies

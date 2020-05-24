@@ -30,7 +30,11 @@ export const GetOffersByHeadHunter = async function (req, res) {
         req.headers["authorization"] || req.headers["Authorization"],
     },
   });
-  response = await Http.offers.get(`/offers/headhunter/${response.id}`);
+
+  response = await Http.offers.put(
+    `/offers/headhunter/${response.data.id}`,
+    req.body
+  );
   res.status(response.status).json(response.data);
 };
 
@@ -42,7 +46,7 @@ export const CreateOffer = async function (req, res) {
     },
   });
 
-  if (response.type !== "company") {
+  if (response.data.type !== "company") {
     res.status(403).json(undefined);
     return;
   }
