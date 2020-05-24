@@ -1,0 +1,798 @@
+{
+	"info": {
+		"_postman_id": "b090e952-2eb0-4ace-b7b0-39c1b6f9219b",
+		"name": "Torre",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "Users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidHlwZSI6ImFjY2VzcyIsImV4cCI6MTU5MDI5NDIzNH0.RaTiVjDSDtNaVV2CVsy3cC0NLViCeK5VQ8I5pErRVck",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\": {\n\t\t\"email\": \"d1@asdasda.com\",\n\t\t\"username\": \"user\",\n\t\t\"name\": \"User\",\n\t\t\"password\": \"123213\",\n\t\t\"password_confirmation\": \"123213\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/v1/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProfile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/v1/profile/fabiostovarr",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"fabiostovarr"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Relationship with user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmYWJpb3N0b3ZhcnIiLCJ0eXBlIjoidXNlciIsImV4cCI6MTU5MDM2MzQ1MywiX3Rva2VuX3R5cGUiOiJhY2Nlc3MifQ.MnCWOUII3MPJPA_f4ULlEs8aImwzHmRA1dmriMyvBgw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"head_hunter_id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/v1/headhunters/associate",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"headhunters",
+								"associate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Head Hunters",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmYWJpb3N0b3ZhcnIiLCJ0eXBlIjoidXNlciIsImV4cCI6MTU5MDM2MzQ1MywiX3Rva2VuX3R5cGUiOiJhY2Nlc3MifQ.MnCWOUII3MPJPA_f4ULlEs8aImwzHmRA1dmriMyvBgw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/v1/users/headhunters",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"headhunters"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "offers",
+			"item": [
+				{
+					"name": "List User Offers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmYWJpb3N0b3ZhcnIiLCJ0eXBlIjoidXNlciIsImV4cCI6MTU5MDM2MjIwNiwiX3Rva2VuX3R5cGUiOiJhY2Nlc3MifQ.NO-fcbzkyH2_3EBQ8DAqR5-FVs-khmXWXSQYE-nNeto",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/v1/offers/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"offers",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change offer state - Head Hunter",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJoZWFkaHVudGVyIiwidHlwZSI6ImhlYWRodW50ZXIiLCJleHAiOjE1OTAzNjI0MTEsIl90b2tlbl90eXBlIjoiYWNjZXNzIn0.nSFTctBfjx5ZTFQx4TtNSAVKFSavnDo3M6V1AVf8x_w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"state\": \"ACTIVE\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/v1/offers/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"offers",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Offers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmYWJpb3N0b3ZhcnIiLCJ0eXBlIjoidXNlciIsImV4cCI6MTU5MDM2MjIwNiwiX3Rva2VuX3R5cGUiOiJhY2Nlc3MifQ.NO-fcbzkyH2_3EBQ8DAqR5-FVs-khmXWXSQYE-nNeto",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/v1/offers/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"offers",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Offers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJjb21wYW55IiwidHlwZSI6ImNvbXBhbnkiLCJleHAiOjE1OTAzNjIwNTYsIl90b2tlbl90eXBlIjoiYWNjZXNzIn0.qh5gIQlgLbLToAzBtIA-DjEuh50UVQMIr5R5MjmAwVI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"NrJlYPwD\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/v1/offers/",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"offers",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "RegisterHeadHunter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\": {\n\t\t\"email\": \"d1@asdasda.com\",\n\t\t\"username\": \"user\",\n\t\t\"name\": \"User\",\n\t\t\"password\": \"123213\",\n\t\t\"password_confirmation\": \"123213\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2000/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RegisterUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\": {\n\t\t\"email\": \"d1@asdasda.com\",\n\t\t\"username\": \"user\",\n\t\t\"name\": \"User\",\n\t\t\"password\": \"123213\",\n\t\t\"password_confirmation\": \"123213\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/v1/auth/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RegisterCompany",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\": {\n\t\t\"email\": \"d1@asdasda.com\",\n\t\t\"username\": \"user\",\n\t\t\"name\": \"User\",\n\t\t\"password\": \"123213\",\n\t\t\"password_confirmation\": \"123213\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2000/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": {\n        \"type\": \"headhunter\",\n        \"username\": \"headhunter\",\n        \"password\": \"12345678\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/v1/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validate Username",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/v1/auth/validate/fabiostovarr",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"validate",
+								"fabiostovarr"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "headhunters",
+			"item": [
+				{
+					"name": "Get users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJoZWFkaHVudGVyIiwidHlwZSI6ImhlYWRodW50ZXIiLCJleHAiOjE1OTAzNjI0MTEsIl90b2tlbl90eXBlIjoiYWNjZXNzIn0.nSFTctBfjx5ZTFQx4TtNSAVKFSavnDo3M6V1AVf8x_w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/v1/headhunters/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"headhunters",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get companies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJoZWFkaHVudGVyIiwidHlwZSI6ImhlYWRodW50ZXIiLCJleHAiOjE1OTAzNjI0MTEsIl90b2tlbl90eXBlIjoiYWNjZXNzIn0.nSFTctBfjx5ZTFQx4TtNSAVKFSavnDo3M6V1AVf8x_w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/v1/headhunters/companies",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"headhunters",
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accept relationship request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJoZWFkaHVudGVyIiwidHlwZSI6ImhlYWRodW50ZXIiLCJleHAiOjE1OTAzNjI0MTEsIl90b2tlbl90eXBlIjoiYWNjZXNzIn0.nSFTctBfjx5ZTFQx4TtNSAVKFSavnDo3M6V1AVf8x_w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"assignment\": {\n\t\t\"user_type\": \"user\",\n\t\t\"id\": 1\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/v1/headhunters/modify",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"headhunters",
+								"modify"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "companies",
+			"item": [
+				{
+					"name": "Create Relationship with user Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJoZWFkaHVudGVyIiwidHlwZSI6ImhlYWRodW50ZXIiLCJleHAiOjE1OTAzNjI0MTEsIl90b2tlbl90eXBlIjoiYWNjZXNzIn0.nSFTctBfjx5ZTFQx4TtNSAVKFSavnDo3M6V1AVf8x_w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"head_hunter_id\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8001/api/v1/headhunters/associate",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"headhunters",
+								"associate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Head Hunters",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJmYWJpb3N0b3ZhcnIiLCJ0eXBlIjoidXNlciIsImV4cCI6MTU5MDM2MzQ1MywiX3Rva2VuX3R5cGUiOiJhY2Nlc3MifQ.MnCWOUII3MPJPA_f4ULlEs8aImwzHmRA1dmriMyvBgw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8001/api/v1/companies/headhunters",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"companies",
+								"headhunters"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "torre",
+			"item": [
+				{
+					"name": "Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bio.torre.co/api/bios/sandraliz30",
+							"protocol": "https",
+							"host": [
+								"bio",
+								"torre",
+								"co"
+							],
+							"path": [
+								"api",
+								"bios",
+								"sandraliz30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search opportunities",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"organisation\": {\n        \"term\": \"Nearsure\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://search.torre.co/opportunities/_search/?offset=0&size=2&aggregate=false",
+							"protocol": "https",
+							"host": [
+								"search",
+								"torre",
+								"co"
+							],
+							"path": [
+								"opportunities",
+								"_search",
+								""
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								},
+								{
+									"key": "aggregate",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search people",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"and\": [\n        {\n            \"skill\": {\n                \"term\": \"development\",\n                \"experience\": \"potential-to-develop\"\n            }\n        },\n        {\n            \"skill\": {\n                \"term\": \"leadership\",\n                \"experience\": \"potential-to-develop\"\n            }\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://search.torre.co/people/_search/?offset=0&size=2&aggregate=true",
+							"protocol": "https",
+							"host": [
+								"search",
+								"torre",
+								"co"
+							],
+							"path": [
+								"people",
+								"_search",
+								""
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								},
+								{
+									"key": "aggregate",
+									"value": "true"
+								},
+								{
+									"key": "_ga",
+									"value": "2.254433024.905142772.1590246121-1000097581.1575636903",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Opportunities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://torre.co/api/opportunities/NrJlYPwD",
+							"protocol": "https",
+							"host": [
+								"torre",
+								"co"
+							],
+							"path": [
+								"api",
+								"opportunities",
+								"NrJlYPwD"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
